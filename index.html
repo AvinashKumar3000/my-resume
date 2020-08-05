@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my-resume</title>
+        <link rel="stylesheet" href="./css/public.css"></link>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <style>
+            .card-title{
+                padding: 10px;
+                font-family: 'Times New Roman', Times, serif;
+                word-spacing: 2px;
+                padding-left: 30px;
+                letter-spacing: 3px;
+                color: white;
+                background: rgb(48,2,45);
+                background: linear-gradient(90deg, rgb(184, 68, 0) 0%, rgba(86,9,87,1) 30%, rgba(169,39,44,1) 100%);
+                border-radius: 10px;
+            }
+            .card{
+              background-color: rgba(75, 75, 75, 0.144);
+              box-shadow: 2px 2px 5px white;
+            }
+            .nav-link{
+              text-transform: uppercase;
+            }
+            tbody{
+              background-color: rgba(255, 255, 255, 0.884);
+            }
+            
+        </style>
+    </head>
+    <body style="color: white;" id="page-top">
+      
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigge wow animated fadeIn" href="#page-top">START</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse animated fadeInDown delay-1s" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger t-left" href="#personal-info">personal-info</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger t-left" href="#contacts">contacts</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger t-left" href="#area-of-interest">area-of-interest</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger t-left" href="#projects">projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger t-left" href="#co-curricular">co-curricular</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger t-left" href="#extra-curricular">extra curricular</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger t-left" href="#end">END</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 left main-wrapper">
+                    <div class="section profile"><img src="./images/dp.jpeg" alt="profile pic" class="profile-pic"/></div>
+                    <div class="name wow animated pulse">Avinash kumar m</div>
+                    <hr class="name-underline" />
+                    <div class="section personal-detial wow animated fadeInLeft " id="contacts">
+                      <div class="row p-1"> 
+                        <i class="fa fa-envelope p-1" aria-hidden="true"></i><span>avinashkumar.cs17@bitsathy.ac.in</span>
+                      </div>
+                      <div class="row p-1"> 
+                        <i class="fa fa-github p-1" aria-hidden="true"></i><span>JinKazamaAvinash</span>
+                      </div>
+                      <div class="row p-1"> 
+                        <i class="fa fa-linkedin-square p-1" aria-hidden="true"></i><span>avinash-kumar-8a80a3172</span>
+                      </div>
+                      <div class="row p-1"> 
+                        <i class="fa fa-phone-square p-1" aria-hidden="true"></i><span>+91 6379765721</span>
+                      </div>
+                    </div>
+                    <hr class="name-underline" />
+                    <div class="card m-2 p-3 wow animated fadeInLeft" id="personal-info">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="key">date of birth</div>
+                                <div class="key">gender</div>
+                                <div class="key">Father's name</div>
+                                <div class="key">Mother's name</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="value">: 23-02-1999</div>
+                                <div class="value">: male</div>
+                                <div class="value">: Murugan M</div>
+                                <div class="value">: Annapoorani</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card m-2 p-3 wow animated fadeInLeft">
+                        <div class="key">LANGUAGE KNOWN :</div>
+                        <ul>
+                            <li>tamil   [ R W S ]</li>
+                            <li>hindi   [ R W S ]</li>
+                            <li>english [ R W S ]</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col right main-wrapper table-hover ">
+                    <div class="card m-2" >
+                        <div class="card-body">
+                          <h5 class="card-title wow animated fadeIn">academic qualifications</h5>
+                          <table class="table table-bordered table-striped wow animated fadeInRight">
+                            <caption class="text-white">* - Till 4rd Semester</caption>
+                            <thead class="thead-dark">
+                              <tr>
+                                <th scope="col">S.no</th>
+                                <th scope="col">Qualification</th>
+                                <th scope="col">University / Board</th>
+                                <th scope="col">Institue / School</th>
+                                <th scope="col">Month & Year of Passing</th>
+                                <th scope="col">Percentage / CGPA</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>B.E CSE</td>
+                                <td>Afflicated to Anna University</td>
+                                <td>Bannari Amman Institute of Technology</td>
+                                <td> - </td>
+                                <td>8.61*</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>HSC</td>
+                                <td>Tamil Nadu Board of Secondary Education</td>
+                                <td>K.R.P matri Hr Sec School</td>
+                                <td>March 2017</td>
+                                <td>85.33 %</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>SSLC</td>
+                                <td>Tamil Nadu Board of Secondary Education</td>
+                                <td>K.R.P Matric Hr Sec School</td>
+                                <td>April 2015</td>
+                                <td>95.6 %</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                
+                    <div class="card m-2" >
+                        <div class="card-body">
+                          <h5 class="card-title wow animated fadeIn">technical skills</h5>
+                          <div class="card-text text-white wow animated fadeInRight">
+                            <ul>
+                              <li>html</li>
+                              <li>css</li>
+                              <li>js</li>
+                              <li>react</li>
+                              <li>python</li>
+                              <li>java</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                
+                    <div class="card m-2" >
+                        <div class="card-body">
+                          <h5 class="card-title wow animated fadeIn">additional qualification</h5>
+                          <div class="card-text text-white wow animated fadeInRight">
+                            <ul>
+                              <li>Certified in <b>BEC [Business English Certificate]</b> preliminary exam by Cambridge University in October,2018.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                
+                    <div class="card m-2" id="area-of-interest" >
+                        <div class="card-body">
+                          <h5 class="card-title wow animated fadeIn">area of interest</h5>
+                          <div class="card-text text-white wow animated fadeInRight">
+                            <ul>
+                              <li>web development</li>
+                              <li>database</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                
+                    <div class="card m-2" id="projects">
+                        <div class="card-body">
+                          <h5 class="card-title text-white wow animated fadeIn">projects</h5>
+                          <ul>
+                            <li class="p-3">
+                              <div class="card-text wow animated fadeInRight text-white">
+                                <div><b>title : </b>Weekly scheduler</div>
+                                <div><b>team size : </b>1</div>
+                                <div><b>role played : </b>full stack developer</div>
+                                <div><b>skills used : </b>HTML, CSS, Bootstrap, React, firebase</div>
+                                <div>In order to make friends actively participate in completing the work a website in which
+                                   friends can make interaction with each other. Where user authenticated with google and provide with
+                                    weekly modifying editable option. Real-time database connectivity
+                                     with each data. Chatting options with your friends.</div>
+                              </div>
+                            </li>
+                            <li class="p-3">
+                              <div class="card-text wow animated fadeInRight text-white">
+                                <div><b>title : </b> File Explorer with python</div>
+                                <div><b>team size : </b>3</div>
+                                <div><b>role played : </b>developer, designer</div>
+                                <div><b>skills used : </b>python, pygame ( game framework )</div>
+                                <div>Used pygame as platform to develop this project.
+                                   The game like UI is generated with pygame.
+                                    Then an additional feature as move multiple file at different source location 
+                                    can be moved to different destination location path at the same time like other file explorer. 
+                                  This main aim of this project to provide tool for cleaning the tedious 
+                                  allocation of file and folder in the computer.</div>
+                              </div>
+                            </li>
+                            <li class="p-3">
+                              <div class="card-text wow animated fadeInRight  text-white">
+                                <div><b>title : </b> Data Visualization with R programming  </div>
+                                <div><b>team size : </b>2 </div>
+                                <div><b>role played : </b>full stack developer</div>
+                                <div><b>skills used : </b>R programming, Shiny UI framework, machine learning</div>
+                                <div>The data set which describes about the minerals in India is collected. 
+                                  The data as analyzed and Linear Regression is applied to prediction. 
+                                  The data graphs are visualized in web based applications.</div>
+                              </div>
+                            </li>
+                            <li class="p-3">
+                              <div class="card-text wow animated fadeInRight  text-white">
+                                <div><b>title : </b> Face detection and password lock system for files protection </div>
+                                <div><b>team size : </b>3 </div>
+                                <div><b>role played : </b>developer, UI designer</div>
+                                <div><b>skills used : </b>C#, python, machine learning, sqlite  </div>
+                                <div>we used C# as a base design UI. Salted hashing encryption for password
+                                   encryption. Face recognition technique  with machine learning is applied
+                                    for authentication. Finally data get stored in sqlite database.</div>
+                              </div>
+                            </li>
+                          </ul>
+                          
+                        </div>
+                      </div>
+               
+                    <div class="card m-2" id="co-curricular">
+                        <div class="card-body">
+                          <h5 class="card-title wow animated fadeIn">co-curricular activities</h5>
+                          <div class="card-text wow animated fadeInRight  text-white">
+                            <ul>
+                              <li>Presented a paper titled “Student Managemnet and surveillance with 
+                                computer vision using YOLO v3” in the Contest Conducted at Kongu Engineering
+                                 College of Engineering.</li>
+                              <li>Presented a paper on “Traffic Management” in GCT College of Technology.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card m-2" id="extra-curricular">
+                        <div class="card-body">
+                          <h5 class="card-title wow animated fadeIn">Extra curricular activities</h5>
+                          <div class="card-text wow animated fadeInRight  text-white">
+                            <ul>
+                              <li>Won 1’st prize in DUFURWA 2K18, a Sketch competition held at Bannari Amman 
+                                Institue of Technology.</li>
+                              <li>Won 1’st prize in CANCER AWARNESS 2K18, a Sketch competition held by YRC ( BIT ).</li>
+                              <li>Active Member of the Youth Red Cross Society(2018-Present)</li>
+                              <li>Volunteer for Futura 2017-a National Level Fest organized by Bannari Amman Institute of Technology</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card m-2" >
+                        <div class="card-body">
+                          <h5 class="card-title wow animated fadeIn">hobbies</h5>
+                          <div class="card-text text-white">
+                            <ul>
+                              <li>Illustration, Digital Art</li>
+                              <li>Reading books</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card m-2" >
+                        <div class="card-body">
+                          <h5 class="card-title wow animated fadeIn">Internships</h5>
+                          <div class="card-text  wow animated fadeInRight text-white">
+                            <ul>
+                              <li>Worked as an intern in bluescheme.ai, Chennai for duration of 3 
+                                months ( 22 july 2019 – 30 Oct 2019 )</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <footer class="bg-light py-3" id="end">
+          <div class="container"><div class="small text-center text-muted">Copyright © 2020 - avinash kumar M</div></div>
+      </footer>
+        <script>
+          $( document ).ready(function() {
+            new WOW().init();
+          });
+        </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="./js/scripts.js"></script>
+    </body>
+</html>
