@@ -173,3 +173,20 @@ a.t-left:hover:before {
       text-align: left;
       left: 0px;
   }
+  #res {
+    display: none;
+  }
+  @media only screen and (max-width: 1100px){
+    #res {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    #res {
+      display: block;
+    }
+    .main-wrapper {
+      height: auto;  
+    }
+  }
