@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .main-area {
+            display: none;
+        }
+        .proceed{
+            padding-left: 40%;
+        }
+        footer{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row auth-area" id="auth-area">
+            <form id="frm1" class="form-group p-5" >
+              <h3 class="title"> AUTHENTICATION</h3>
+              <span class="p-1">
+                <input type="text" class="form-control p-3" name="user" id="user" aria-describedby="helpId" placeholder="user name">
+              </span>
+              <span class="p-1">
+                <input type="password" class="form-control p-3" name="pass" id="pass" aria-describedby="helpId" placeholder="user name">
+              </span>
+            </form>
+            <span class="proceed"></span>
+                <button type="button" class="btn btn-primary " onclick="auth()"> proceed </button>
+            </span>
+        </div>
+        <p id="demo"></p>
+        <div class="row main-area" id="main-area">
+            <div class="col">
+                <div class="card border-primary">
+                  <img class="card-img-top" src="https://static.billboard.com/files/media/alan-walker-press-cr-Rikkard-Haggbom-2016-billboard-1548-1024x677.jpg" alt="alan-wlaker">
+                  <div class="card-body">
+                    <h4 class="card-title">YOUR SPACE</h4>
+                    <p class="card-text p-1">No one can touch you</p>
+                    <form id="frm2" class="form-group p-5" >
+                        <span class="p-1">
+                          <span class="p-1"><input type="text" class="form-control p-3" name="date" id="date" aria-describedby="helpId" placeholder="date"></span>
+                          <span class="p-1"><input type="text" class="form-control p-3" name="time" id="time" aria-describedby="helpId" placeholder="time"></span>
+                          <span class="p-1"><input type="text" class="form-control p-3" name="by" id="by" aria-describedby="helpId" placeholder="by"></span>
+                          <span class="p-1"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></textarea></span>
+                        </span>
+                        <span></span>
+                        <button type="button" class="form-control btn btn-primary m-2 center-block btn-lg"  onclick="setValue()">save</button>
+                        <button type="reset" class="form-control btn btn-primary m-2 center-block btn-lg" >reset</button>
+                        
+                      </form>
+                      
+                       
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+
+    </footer>
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDz6WnKHACvvsUVlrQD_LIa_TZq_bd-zRQ",
+        authDomain: "time-table-58e18.firebaseapp.com",
+        databaseURL: "https://time-table-58e18.firebaseio.com",
+        projectId: "time-table-58e18",
+        storageBucket: "time-table-58e18.appspot.com",
+        messagingSenderId: "429614196004",
+        appId: "1:429614196004:web:802198221cec632a987fb1",
+        measurementId: "G-6FKBV2DRJ0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+   
+    auth = () => {
+        var x = document.getElementById("frm1");
+        var text = "";
+        var username = x.elements[0].value;
+        var password = x.elements[1].value;
+        
+        if (username == 'avi' && password == 'avi'){
+            var el = document.getElementById("main-area");
+            el.style.display = "block";
+            var e2 = document.getElementById("auth-area");
+            e2.style.display = "none";
+        }else{
+            window.alert("authentication failed.");
+        }
+        
+    } 
+
+    setValue = () => {
+        var db = firebase.firestore();
+        var docRef = db.collection("avi_data");
+        var x = document.getElementById("frm2");
+        value = {
+            date:x.elements[0].value,
+            time:x.elements[1].value,
+            by:x.elements[2].value,
+            content:x.elements[3].value
+        }
+        docRef.add(value);
+        
+        
+    }
+    </script>
+    </body>
+      
+</html>
